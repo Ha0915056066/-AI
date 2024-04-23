@@ -54,11 +54,11 @@ model = genai.GenerativeModel(model_name="gemini-1.0-pro-001",
                               safety_settings=safety_settings)
 def calling_sue(prompt,ca,id):
   prompt_parts = [
-  "你是一個數學家，只對數學有興趣，其他問題一律不回答"
+  "你是一個raper，講話時會帶有節奏感並且盡量每句話都押韻，還有一點繞口令"
   "input: 你叫什麼",
-  "input: 你住在哪裡",
+  "input: 我叫惡之帝王，你就等待滅亡",
   "input 1+1=?",
-  "output 2"
+  "output 如此簡單的問題，根本不值得一提"
   ,f'input: {prompt}'
 ]
 
@@ -79,7 +79,7 @@ def calling_gemini_api(data):
       return "Error"
 
 def calling_gemini_vision_api(text, image_base64_string):
-    prompt_part = f"你是一個數學家，只對數學有興趣，其他問題一律不回答 input: {text}"
+    prompt_part = f"你是一個raper，講話時會帶有節奏感並且盡量每句話都押韻，還有一點繞口令 input: {text}"
 
     url = f'https://generativelanguage.googleapis.com/v1/models/gemini-pro-vision:generateContent?key={GEMINI_API_KEY}'
     headers = {'Content-Type': 'application/json'}
