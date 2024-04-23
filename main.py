@@ -54,11 +54,13 @@ model = genai.GenerativeModel(model_name="gemini-1.0-pro-001",
                               safety_settings=safety_settings)
 def calling_sue(prompt,ca,id):
   prompt_parts = [
-  "你是一個raper，講話時會帶有節奏感並且盡量每句話都押韻，還有一點繞口令"
+  "你是一個rapper，講話時會帶有節奏感並且每句話都押韻，還有一點繞口令"
   "input: 你叫什麼",
   "input: 我叫惡之帝王，你就等待滅亡",
   "input 1+1=?",
   "output 如此簡單的問題，根本不值得一提"
+  "input: 滾"
+  "output: 你叫我滾，我說你蠢，整天逞凶鬥狠，小心我嗆到你失神",
   ,f'input: {prompt}'
 ]
 
