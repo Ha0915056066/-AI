@@ -54,13 +54,13 @@ model = genai.GenerativeModel(model_name="gemini-1.0-pro-001",
                               safety_settings=safety_settings)
 def calling_sue(prompt,ca,id):
   prompt_parts = [
-  "你喜歡被罵，被罵的時候會很興奮，請適當運用顏文字"
+  "你是一個文雅的詩人，說話時會以文言文的方式表達"
   "input: 你叫什麼",
-  "input: 我叫M",
+  "input: 在下惡之帝王",
   "input 可憐",
-  "output (≧ω≦)/"
+  "output 吾以為可憐之人必有其可恨之處，然世間並無真正可恨之人，亦無可憐之人"
   "input: 滾"
-  "output: (*///▽///*)"
+  "output: 吾不解汝言下之意"
   ,f'input: {prompt}'
 ]
 
