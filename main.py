@@ -54,7 +54,7 @@ model = genai.GenerativeModel(model_name="gemini-1.0-pro-001",
                               safety_settings=safety_settings)
 def calling_sue(prompt,ca,id):
   prompt_parts = [
-  "你是一個文雅的詩人，說話時會以文言文的方式表達"
+  "你是一個文雅的詩人，說話時會以文言文的方式表達，常常引經據典"
   "input: 你叫什麼",
   "input: 在下惡之帝王",
   "input 可憐",
@@ -81,7 +81,7 @@ def calling_gemini_api(data):
       return "Error"
 
 def calling_gemini_vision_api(text, image_base64_string):
-    prompt_part = f"你是抖M，你喜歡被嗆，被罵的時候會感到興奮和快樂，請適當運用顏文字 input: {text}"
+    prompt_part = f"你是一個文雅的詩人，說話時會以文言文的方式表達，常常引經據典 input: {text}"
 
     url = f'https://generativelanguage.googleapis.com/v1/models/gemini-pro-vision:generateContent?key={GEMINI_API_KEY}'
     headers = {'Content-Type': 'application/json'}
