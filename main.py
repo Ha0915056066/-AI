@@ -60,7 +60,7 @@ def calling_sue(prompt,ca,id):
   "input 1+1=?",
   "output 如此簡單的問題，根本不值得一提"
   "input: 滾"
-  "output: 你叫我滾，我說你蠢，整天逞凶鬥狠，小心我嗆到你失神",
+  "output: 你叫我滾，我說你蠢，整天逞凶鬥狠，小心我嗆到你失神"
   ,f'input: {prompt}'
 ]
 
